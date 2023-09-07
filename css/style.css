@@ -8,7 +8,7 @@
 /* header */
 body{
     width: 80%;
-    margin: 0 auto;
+    margin: 10px 10px auto;
     background-color: black;
 }
 .wrapped{
@@ -24,19 +24,22 @@ h1{
 }
 
 /* blocchi */
-.clearfix:after{
+.clearfix::after{
     content: "";
     display: table;
     clear: both;
 }
-main{
+.container{
     background-color: white;
 }
 .box{
-    align-items: center;
-    justify-content: center;
+    background-color: black;
+    margin: 30px;
+    width: calc((100%/3)-90px);
+    float:left;
+    color: white;
 }
 img{
     width: calc(100%/3);
-    float: left
+    float: left;
 }
