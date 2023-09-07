@@ -2,4 +2,41 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+}
+
+/* header */
+body{
+    width: 80%;
+    margin: 0 auto;
+    background-color: black;
+}
+.wrapped{
+    background-color: white;
+}
+h1{
+    background-color: white;
+    font-size: 600;
+    color:#E5316F;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+/* blocchi */
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+main{
+    background-color: white;
+}
+.box{
+    align-items: center;
+    justify-content: center;
+}
+img{
+    width: calc(100%/3);
+    float: left
 }
