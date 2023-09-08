@@ -12,6 +12,9 @@ body{
     width: 80%;
     margin: 0 auto;
 }
+.wrapped{
+    background-color: white;
+}
 
 h1{
     background-color: white;
@@ -30,37 +33,33 @@ h3,p,a{
 }
 
 /* blocchi */
-.wrapped{
-    background-color: white;
+.container{
+    width: 1200px;
+    height: 1200px;
 }
 .clearfix::after{
     content: "";
     display: table;
     clear: both;
 }
-.container{
-    width: 100%;
-    height: 100%;
-    background-color: white;
-}
-
 .box{
     background-color: black;
-    float:left;
-    width: 33,33%;
     color: white;
-    margin: 20px;
-    padding-right: 40px;
-}
-
-img{
-    width: calc(100%/3);
+    display: flex;
+    align-items: center;
     float: left;
-    margin-right: 10px;
-    display: block;
+    margin: 10px;
+    width: calc((100%/3)-30px);
+}
+img{
+    width: 80px;
+    height: auto;
+    margin-right: 20px;
 }
 .text{
-    font-size: 11px;
-    padding-top: 10px;
+    font-size: 12px;
 }
+
+
+
 
