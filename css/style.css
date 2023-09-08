@@ -7,39 +7,53 @@
 
 /* header */
 body{
+    max-width: 800px;
+    min-width: 500px;
     width: 80%;
-    margin: 10px 10px auto;
-    background-color: black;
+    margin: 0 auto;
 }
-.wrapped{
-    background-color: white;
-}
+
 h1{
     background-color: white;
     font-size: 600;
     color:#E5316F;
-    text-align: center;
     padding-top: 20px;
     padding-bottom: 40px;
 }
 
+header{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
 /* blocchi */
+.wrapped{
+    background-color: white;
+}
 .clearfix::after{
     content: "";
     display: table;
     clear: both;
 }
 .container{
+    width: 100%;
+    height: 100%;
     background-color: white;
+    align-items: center;
 }
-.box{
+.box-top,.box-bottom{
     background-color: black;
-    margin: 30px;
-    width: calc((100%/3)-90px);
+    width: calc((100%/3)-24px);
     float:left;
     color: white;
+    margin: 8px;
+    padding-right: 30px;
 }
 img{
+    height: 100%;
     width: calc(100%/3);
     float: left;
+}
+.text{
+    font-size: 10px;
 }
